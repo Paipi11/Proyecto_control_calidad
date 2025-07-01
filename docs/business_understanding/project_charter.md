@@ -1,12 +1,18 @@
 # Project Charter - Entendimiento del Negocio
 
+## Integrantes del equipo de trabajo
+Grupo N° #
+
+- Andrés David Paipilla Salgado - CC 1015477880 - apaipillas@unal.edu.co
+- Daniel Alejandro Pedreros Cifuentes- CC 1233493224 - d-cifuentes@hotmail.com
+
 ## Nombre del Proyecto
 
-[Nombre del proyecto aquí]
+Identificación del estado de productos de exportación perecederos para mejorar el proceso de control de calidad
 
 ## Objetivo del Proyecto
 
-[Descripción breve del objetivo del proyecto y por qué es importante]
+Este proyecto busca ayudar a mejorar el proceso de control de calidad de ciertos productos perecederos, en específico, frutas por medio de un modelo que identifique si el producto está en buen o mal estado. Este tipo de productos tienen que contar con una rigurosa inspección antes de ser exportados, por lo cual este modelo ayudaría a separar y filtrar este tipo de productos y garantizar la efectividad del control de calidad. En otras palabras, el producto debe estar en óptimas condiciones para el consumo y para prevenir contaminar al resto del producto durante todo su proceso de exportación.
 
 ## Alcance del Proyecto
 
