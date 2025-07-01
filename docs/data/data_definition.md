@@ -39,6 +39,8 @@ El dataset se obtiene desde la plataforma Kaggle, desde el repositorio `"leftin/
   Allí los datos son copiados con la función `shutil.copytree()` que permitira el posterior procesamiento y analisis de datos.
 
 ### Rutas de origen de datos
+Respecto al entendimiento de los datos se tiene:  
+
 El dataset está organizado en una carpeta principal `dataset` que contiene tres sub carpetas  `'test'`,  `'train'`,  `'dataset'`:  
 `'test'`: contiene imágenes destinadas a la evaluación del modelo.   
 `'train'`:contiene imágenes destinadas al entrenamiento del modelo.   
@@ -46,7 +48,25 @@ El dataset está organizado en una carpeta principal `dataset` que contiene tres
 
 El total de imagenes con las que se cuenta es de 41936 en formatos jpg y png.  
 
-- [ ] Describir los procedimientos de transformación y limpieza de los datos.
+Luego de ver la organización del Dataset, se realizan las siguientes filtraciones para su etapa de limpieza:  
+
+1. Eliminación de datos repetidos: En este proceso se identifica que las subcarpetas en `'dataset'` contienen los mismos datos que las carpetas   `'test'`,  `'train'`, antes nombradas, por ende, se proceden a eliminar estas carpetas sueltas, quedando solamente `'dataset'` con sus respectivas sub carpetas.  
+
+2. Eliminación de información no relevante: La información dentro de las subcarpetas se filtra teniendo en cuenta que se debe eliminar una categoria que no esta contemplada dentro del alcance del proyecto, `unripe` correspondiente a frutas verdes. Además, tambien se eliminan las imagenes que no cumplen con un estandar basico de información minima que pueda brindar la imagen al proyecto, segun su tamañano (Resolución 128X128).
+
+3. Codificación de etiquetas:
+   Se hace una codificación de etiquetas de la siguiente manera:  
+   `0    freshapples`  
+   `1    freshbanana`  
+   `2   freshoranges`  
+   `3   rottenapples`  
+   `4   rottenbanana`  
+   `5  rottenoranges`  
+De esta manera el proyecto queda con una cantidad de 13572 imagenes distribuidas en:  
+imágenes `test`: 2693  
+imágenes `train`: 10879
+
+Con un peso total de 1.82 GB
 
 ### Base de datos de destino
 
