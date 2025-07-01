@@ -58,21 +58,21 @@ La metodología utilizada para este proyecto será Cross Industry Standard Proce
 
 | Categoría | Descripción | Rango estimado | Observaciones |
 |------|---------|-------|-------|
-| Recolección de datos | Fuente de los datos y etiquetado para el aprendizaje | 0 - 1'000.000 COP | La fuente de datos es Kaggle por lo que no implicaría un costo. Sin embargo, dado el caso que la empresa quisiera hacerlo con imágenes propias de sus productos se debería contratar un técnico para tomar las fotos y en diferentes condiciones (luz, fondo, estado de madurez) |
+| Recolección de datos | Fuente de los datos y etiquetado para el aprendizaje | 0 - 4'000.000 COP | La fuente de datos es Kaggle por lo que no implicaría un costo. Sin embargo, dado el caso que la empresa quisiera hacerlo con imágenes propias de sus productos se debería contratar un técnico para tomar las fotos y en diferentes condiciones (luz, fondo, estado de madurez) |
 | Infraestructura | Opciones donde se realizará el desarrollo y entrenamiento del modelo y si será un computador local o en la nube | 1'000.000 - 5'000.000 COP | La opción más asequible sería Google Colab y AWS como una opción escalable a futuro. En caso de que se quiera hacer de forma local si implicara un costo más alto, pero con completa independencia |
 | Desarrollo del modelo | Comprende la limpieza de datos, entrenamiento, validación y pruebas | 12'000.000 - 20'000.000 COP | El costo dependerá del número de Data Scientist que se requieran (entre 1 y 2) para realizar todos los pasos de la metodología CRISP - DM |
 | Despliegue y mantenimiento | Aplicación donde se hará uso del modelo y se realizarán los diferentes ajustes necesarios para el usuario final | 4'000.000 - 12'000.000 COP | Dependerá de factores como el servidor (local o en la nube) y si es necesario un desarrollador Backend, Frontend o Fullstack. Adicionalmente, el integrar las cámaras de la planta de producción con la aplicación |
 | Otros | aquí se incluyen licencias de software, capacitación del personal de la planta y las pruebas piloto | 4'000.000 - 8'000.000 COP | Este costo dependerá de las licencias que se utilicen y del tiempo que tome las capacitaciones del personal |
-| | Total | Entre 22'000.000 - 46'000.000 COP  | |
+| | Total | Entre 22'000.000 - 49'000.000 COP  | |
 
 ## Stakeholders
 
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
+- Carlos Suarez QMS Coordinator de Ocati S.A.
+- Relación con los stakeholders: En lo que se lleva del 2025 las exportaciones del grupo de productos Agropecuarios, alimentos y bebidas ha tenido una contribución de 11 Millones de dólares habiendo crecido un 36.9% versus el inicio del año según cifras del DANE y su tendencia es positiva. Dado que la demanda de este tipo de productos crece, es crucial un buen control de calidad y contar con herramientas tecnológicas que permitan una mayor efectividad y precisión a la hora de escoger estos productos. Este rubro será vital para la economía colombiana y para todas las empresas que están en busca de nuevos clientes internacionales y genera confianza en la calidad de sus productos.
+- Expectativas: mejorar la efectividad del proceso de selección de frutas, minimizando el riesgo de reportar frutas en mal estado en pedidos de exportación y evitar pérdidas monetarias y de reputación a la compañía.
 
 ## Aprobaciones
 
-- [Nombre y cargo del aprobador del proyecto]
-- [Firma del aprobador]
-- [Fecha de aprobación]
+- Andrés David Paipilla Salgado -> Líder del proyecto
+- **Andrés Paipilla**
+- Julio 3 de 2025
