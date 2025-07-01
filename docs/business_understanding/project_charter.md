@@ -1,7 +1,7 @@
 # Project Charter - Entendimiento del Negocio
 
 ## Integrantes del equipo de trabajo
-Grupo N° #
+Grupo N° 13
 
 - Andrés David Paipilla Salgado - CC 1015477880 - apaipillas@unal.edu.co
 - Daniel Alejandro Pedreros Cifuentes- CC 1233493224 - d-cifuentes@hotmail.com
@@ -18,38 +18,52 @@ Este proyecto busca ayudar a mejorar el proceso de control de calidad de ciertos
 
 ### Incluye:
 
-- [Descripción de los datos disponibles]
-- [Descripción de los resultados esperados]
-- [Criterios de éxito del proyecto]
+- La construcción de un modelo de Deep Learning utilizando redes neuronales que permita clasificar y reconocer el estado de las frutas, y así poder escoger los mejores productos de exportación. El modelo se desarrollará en la API de Keras y se evaluará por medio del accuracy teniendo presente los pesos de cada clase, para no caer en conclusiones erróneas de la efectividad de nuestro modelo.
+  
+- El proyecto se centrará exclusivamente las siguientes frutas:
+  - Banano
+  - Manzana
+  - Naranja
+    
+*Nota:* Conforme vayamos avanzando en el proyecto se irán añadiendo otros tipos de frutas o verduras para ampliar la variedad a identificar.
+
+
+- Identificar desde varios ángulos las imágenes de frutas con una precisión de al menos 90%. 
 
 ### Excluye:
 
-- [Descripción de lo que no está incluido en el proyecto]
+- Por el momento algún otro tipo de fruta que no sea banano, naranja o manzana.
 
 ## Metodología
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+La metodología utilizada para este proyecto será Cross Industry Standard Process for Data Mining (CRISP - DM), gracias a su flexibilidad y facilidad para personalizar.
 
 ## Cronograma
 
-| Etapa | Duración Estimada | Fechas |
-|------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
+| Etapa | Duración Estimada | Fechas | Encargado |
+|------|---------|-------|-------|
+| Entendimiento del negocio y carga de datos | 1 semana | del 25 de Junio al 3 de Julio | Daniel Pedreros y Andrés Paipilla |
+| Preprocesamiento, análisis exploratorio | 1 semanas | del 4 de Julio al 10 de Julio | Daniel Pedreros y Andrés Paipilla |
+| Modelamiento y extracción de características | 1 semana | del 11 de JuLio al 17 de Julio | Daniel Pedreros y Andrés Paipilla |
+| Despliegue | 1 semana | del 18 de julio al 24 de julio | Daniel Pedreros y Andrés Paipilla |
+| Evaluación y entrega final | 1 semana | del 25 de Julio al 28 de Julio | Daniel Pedreros y Andrés Paipilla |
 
-Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
 
 ## Equipo del Proyecto
 
-- [Nombre y cargo del líder del proyecto]
-- [Nombre y cargo de los miembros del equipo]
+- Andrés David Paipilla Salgado -> Líder del proyecto
+- Daniel Alejandro Pedreros Cifuentes -> Miembro de equipo
 
 ## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
+| Categoría | Descripción | Rango estimado | Observaciones |
+|------|---------|-------|-------|
+| Recolección de datos | Fuente de los datos y etiquetado para el aprendizaje | 0 - 1'000.000 COP | La fuente de datos es Kaggle por lo que no implicaría un costo. Sin embargo, dado el caso que la empresa quisiera hacerlo con imágenes propias de sus productos se debería contratar un técnico para tomar las fotos y en diferentes condiciones (luz, fondo, estado de madurez) |
+| Infraestructura | Opciones donde se realizará el desarrollo y entrenamiento del modelo y si será un computador local o en la nube | 1'000.000 - 5'000.000 COP | La opción más asequible sería Google Colab y AWS como una opción escalable a futuro. En caso de que se quiera hacer de forma local si implicara un costo más alto, pero con completa independencia |
+| Desarrollo del modelo | Comprende la limpieza de datos, entrenamiento, validación y pruebas | 12'000.000 - 20'000.000 COP | El costo dependerá del número de Data Scientist que se requieran (entre 1 y 2) para realizar todos los pasos de la metodología CRISP - DM |
+| Despliegue y mantenimiento | Aplicación donde se hará uso del modelo y se realizarán los diferentes ajustes necesarios para el usuario final | 4'000.000 - 12'000.000 COP | Dependerá de factores como el servidor (local o en la nube) y si es necesario un desarrollador Backend, Frontend o Fullstack. Adicionalmente, el integrar las cámaras de la planta de producción con la aplicación |
+| Otros | aquí se incluyen licencias de software, capacitación del personal de la planta y las pruebas piloto | 4'000.000 - 8'000.000 COP | Este costo dependerá de las licencias que se utilicen y del tiempo que tome las capacitaciones del personal |
+| | Total | Entre 22'000.000 - 46'000.000 COP  | |
 
 ## Stakeholders
 
