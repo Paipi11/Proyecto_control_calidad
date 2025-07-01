@@ -1,16 +1,29 @@
 # Reporte de Datos
 
-Este documento contiene los resultados del análisis exploratorio de datos.
+Se presentan los resultados del análisis exploratorio de los datos.
 
 ## Resumen general de los datos
 
-En esta sección se presenta un resumen general de los datos. Se describe el número total de observaciones, variables, el tipo de variables, la presencia de valores faltantes y la distribución de las variables.
+El conjunto de datos trae preestablecido la partición de los mismos en las carpetas `dataset`, `train` y `test`. Sin embargo, como los datos se repiten, se procede a eliminar estos datos repetidos, a demás, se eliminan los datos de una categoria que no esta contemplada dentro del alcance del proyecto.  
+
+Se cuenta con imagenes de bananos, naranjas y manzanas repartidos y organizados en frutas en buen estado y frutas en mal estado, de esta manera se tienen las siguientes variables:
+
+`0    freshapples`  
+`1    freshbanana`  
+`2   freshoranges`  
+`3   rottenapples`  
+`4   rottenbanana`  
+`5  rottenoranges`  
+
+Las imagenes se encuentran en formato `.png`, se verifica que todas las imagenes puedan ser abiertas, que no hayan imagenes vacias, que no hayan imagenes completamente negras o blancas, por ultimo se verifica la cantidad de imagenes con baja resolución. 
 
 ## Resumen de calidad de los datos
 
-En esta sección se presenta un resumen de la calidad de los datos. Se describe la cantidad y porcentaje de valores faltantes, valores extremos, errores y duplicados. También se muestran las acciones tomadas para abordar estos problemas.
+Se filtran las imagenes teniendo en cuenta la información minima que puede brindar la imagen al proyecto, segun su tamañano (Resolución 128X128) con un resultado de 27 imagenes que no cumplen esta condición, se procede a hacer la eliminación, ya que no representa un numero significativo respecto al total de imagenes con el que se cuenta.   
+De esta manera despues de la limpieza de datos se tiene un total de 10879 imagenes de validacion, que seria un aproximado del 80% de los datos, y 2693 imagenes de prueba, que seria un aproximado del 20% de los datos, todas estas imagenes sin errores, no hay imagenes duplicadas.
 
 ## Variable objetivo
+El producto final será utilizado por parte de los exportadores de fruta que podrán, a través del modelo, identificar si la fruta está en condiciones optimas o no, para ser exportada y evitar posibles contaminaciones, es decir, para este proyecto se tendra en cuenta si es una fruta fresca `fresh` o si es una fruta `rotten` además el modelo debe informar que tipo de fruta es `freshapples`, `freshbanana`, `freshoranges`, `rottenapples`, `rottenbanana`, `rottenoranges`.
 
 En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
 
