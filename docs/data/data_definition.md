@@ -69,7 +69,23 @@ imágenes `train`: 10879
 Con un peso total de 1.82 GB
 
 ### Base de datos de destino
+Como base de datos de destino se tendra al dataset limpio, en la ruta de la copia local, se hara uso de la herramienta de TensorFlow `tf.keras.utils.image_dataset_from_directory()` que permite cargar imágenes desde una estructura de carpetas y convertirlas directamente en un dataset listo para entrenar el modelo. 
 
-- [ ] Especificar la base de datos de destino para los datos.
-- [ ] Especificar la estructura de la base de datos de destino.
-- [ ] Describir los procedimientos de carga y transformación de los datos en la base de datos de destino.
+Se carga la ruta del dataset con el debido preprocesamiento:
+`training_set_rgb = tf.keras.utils.image_dataset_from_directory(
+    '/kaggle/working/fruit_dataset_editable/archive (1)/dataset/dataset/train')`  
+Allí se configuran los parámetros para el modelamiento:  
+`labels='inferred'`,  
+ `label_mode='categorical'`,  
+ `class_names=None`,  
+ `color_mode='rgb'`,  
+ `batch_size=32`,  
+ `image_size=(128,128)`,  
+ `shuffle=True`,  
+ `seed=None`, 
+ `validation_split=None`,  
+ `subset=None`,  
+ `interpolation='bilinear'`,  
+ `follow_links=False`,  
+ `crop_to_aspect_ratio=False`  
+De esta manera se obtiene imagenes en formato RGB, redimensionadas a 128x128 pixeles, en lotes de 32 y las etiquetas inferidas por el mismo sistema y codificadas de forma categorica en formato one-hot.
