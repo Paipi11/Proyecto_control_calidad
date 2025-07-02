@@ -23,6 +23,12 @@ Se filtran las imagenes teniendo en cuenta la información minima que puede brin
 De esta manera despues de la limpieza de datos se tiene un total de 10879 imagenes de validacion, que seria un aproximado del 80% de los datos, y 2693 imagenes de prueba, que seria un aproximado del 20% de los datos, todas estas imagenes sin errores, no hay imagenes duplicadas.
 
 ## Variable objetivo
+La variable objetivo a estimar son dos variables categóricas que el modelo predecirá que son las siguientes:  
+
+- Nombre de la fruta (Banano, Manzana, Naranja)  
+- Estado de la fruta (Apta, No Apta)  
+
+Estas variables se predeciran a partir de la imagen que reciba el modelo determinando estas dos variables objetivo.
 El producto final será utilizado por parte de los exportadores de fruta que podrán, a través del modelo, identificar si la fruta está en condiciones optimas o no, para ser exportada y evitar posibles contaminaciones, es decir, para este proyecto se tendra en cuenta si es una fruta fresca `fresh` o si es una fruta `rotten` además el modelo debe informar que tipo de fruta es `freshapples`, `freshbanana`, `freshoranges`, `rottenapples`, `rottenbanana`, `rottenoranges`. Esta información etiquetada ya viene preestablecida en el dataset por la manera en que estan almacenados los datos.
 
 | Carpeta, estado y fruta | Número de archivos |
@@ -40,15 +46,12 @@ El producto final será utilizado por parte de los exportadores de fruta que pod
 | test - freshoranges | 388 |
 | test - rottenorange | 398 |
 
-## Variables individuales
-Para el presente proyecto el analisis que se piensa realizar va en relacion con el conjunto de fotografias de frutas en buen y mal estado, como antes se ha mensionado, la etiqueta se 
-
-En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
 
 ## Ranking de variables
 
-En esta sección se presenta un ranking de las variables más importantes para predecir la variable objetivo. Se utilizan técnicas como la correlación, el análisis de componentes principales (PCA) o la importancia de las variables en un modelo de aprendizaje automático.
+Para determinar la relación entre variables se tomo como referencia la resolución de cada imagen en el set de imágenes a utilizar. Se utilizan expresiones regulares para poder separar tanto el estado (fresh, unripe, rotten) como el tipo de fruta (apple,  banana, orange) y determinar su frecuencia en el dataset, con el fin de poder saber si hay algún tipo de correlación entre las frutas y la resolución, de esta manera se transforma cada tipo de fruta, a etiqueta numérica por medio de `LabelEncoder()`.  
 
-## Relación entre variables explicativas y variable objetivo
+Como resultado se obtiene que las etiquetas correspondientes a las frutas, no tienen correlación con la resolución de las imágenes. Consecuentemente, esto es un buen indicio sobre el conjunto de datos, al no presentar alguna preferencia de resolución sobre alguna fruta en específico.  
 
-En esta sección se presenta un análisis de la relación entre las variables explicativas y la variable objetivo. Se utilizan gráficos como la matriz de correlación y el diagrama de dispersión para entender mejor la relación entre las variables. Además, se pueden utilizar técnicas como la regresión lineal para modelar la relación entre las variables.
+Como resultado se encuentra en que existe una relación fuerte y positiva entre width y Height, siendo logico, pues al ser imagenes anchas tienden a ser imagenes más altas, de aqui el alto valor de la correlación, similar a la correlación entre width Vs Total resolution, ya que si aumenta el ancho, la resolución tambien crece. Diferente pasa con width o Height Vs Fruta Label, ya que hay una correlación muy debil y casi nula, indicando que Fruta label no esta relacionada con la resolución de la imagen.  
+Por ultimo de evidencia que las imágenes de la fruta banano presentan rangos mayores de resolución, alcanzando valores por encima de los 350000 pixeles mientras que la fruta naranja tiene un máximo de 300000, sin embargo, todos los tres tipos de fruta presentan una mayor densidad hacia imágenes entre los 0 y 50000 pixeles de resolución total.
