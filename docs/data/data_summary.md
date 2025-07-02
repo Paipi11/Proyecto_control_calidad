@@ -23,11 +23,25 @@ Se filtran las imagenes teniendo en cuenta la información minima que puede brin
 De esta manera despues de la limpieza de datos se tiene un total de 10879 imagenes de validacion, que seria un aproximado del 80% de los datos, y 2693 imagenes de prueba, que seria un aproximado del 20% de los datos, todas estas imagenes sin errores, no hay imagenes duplicadas.
 
 ## Variable objetivo
-El producto final será utilizado por parte de los exportadores de fruta que podrán, a través del modelo, identificar si la fruta está en condiciones optimas o no, para ser exportada y evitar posibles contaminaciones, es decir, para este proyecto se tendra en cuenta si es una fruta fresca `fresh` o si es una fruta `rotten` además el modelo debe informar que tipo de fruta es `freshapples`, `freshbanana`, `freshoranges`, `rottenapples`, `rottenbanana`, `rottenoranges`.
+El producto final será utilizado por parte de los exportadores de fruta que podrán, a través del modelo, identificar si la fruta está en condiciones optimas o no, para ser exportada y evitar posibles contaminaciones, es decir, para este proyecto se tendra en cuenta si es una fruta fresca `fresh` o si es una fruta `rotten` además el modelo debe informar que tipo de fruta es `freshapples`, `freshbanana`, `freshoranges`, `rottenapples`, `rottenbanana`, `rottenoranges`. Esta información etiquetada ya viene preestablecida en el dataset por la manera en que estan almacenados los datos.
 
-En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
+| Carpeta, estado y fruta | Número de archivos |
+|------|---------|
+| train - rottenapples| 2342 | 
+| train - freshapples | 1693 | 
+| train - rottenbanana | 2224 | 
+| train - freshbanana | 1581 | 
+| train - rottenoranges | 1573 | 
+| train - freshoranges | 1466 |
+| test - rottenapples | 601 |
+| test - freshapples | 395 |
+| test - rottenbanana | 530 |
+| test - fresbanana | 381 |
+| test - freshoranges | 388 |
+| test - rottenorange | 398 |
 
 ## Variables individuales
+Para el presente proyecto el analisis que se piensa realizar va en relacion con el conjunto de fotografias de frutas en buen y mal estado, como antes se ha mensionado, la etiqueta se 
 
 En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
 
