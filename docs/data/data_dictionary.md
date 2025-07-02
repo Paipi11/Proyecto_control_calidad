@@ -6,11 +6,10 @@
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | --- | --- | --- | --- | --- |
-| variable_1 | Descripción de la variable 1 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_2 | Descripción de la variable 2 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_3 | Descripción de la variable 3 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_4 | Descripción de la variable 4 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_5 | Descripción de la variable 5 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
+| Frutas frescas | Imagenes de frutas en buen estado (`fresh`), representadas como: `freshapples`,  `freshbanana`,  `freshoranges` | categórico  (Imagen) | `freshapples`,  `freshbanana`,  `freshoranges` | Fuente de datos |
+  | Frutas en descomposición | Imagenes de frutas en mal estado (`unripe`), representadas como: `rottenapples`,  `rottenbanana`,  `rottenoranges`| categórico  (Imagen) | `rottenapples`,  `rottenbanana`,  `rottenoranges` | Fuente de datos |
+
+
 
 - **Variable**: nombre de la variable.
 - **Descripción**: breve descripción de la variable.
