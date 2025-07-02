@@ -1,6 +1,6 @@
 # Diccionario de datos
 
-## Base de datos: [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) |
+## Base de datos: [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) 
 
 El conjunto de imagenes proviene de la plataforma Kaggle, se describe la variable objetivo a estimar, que estaria enmarcada en la clasificacion de frutas en buen o en mal estado para exportación; es una variable de tipo categorica al ser un conjunto de imagenes.  
 Respecto a la siguiente tabla, se comentan aspectos generales de la variable, se hace una breve descripción de la misma, se muestra el conjunto de valores posibles y se cita la fuente de los datos.
