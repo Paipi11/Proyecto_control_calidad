@@ -89,3 +89,7 @@ Allí se configuran los parámetros para el modelamiento:
  `follow_links=False`,  
  `crop_to_aspect_ratio=False`  
 De esta manera se obtiene imagenes en formato RGB, redimensionadas a 128x128 pixeles, en lotes de 32 y las etiquetas inferidas por el mismo sistema y codificadas de forma categorica en formato one-hot.
+
+![Imagen de ejemplo](images/Imagenejemplo.png)
+
+
