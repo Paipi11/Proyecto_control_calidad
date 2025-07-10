@@ -46,6 +46,7 @@ El producto final será utilizado por parte de los exportadores de fruta que pod
 | test - freshoranges | 388 |
 | test - rottenorange | 398 |
 
+![Dsitribución de variables](images/distribucion.png)
 
 ## Ranking de variables
 
@@ -55,4 +56,9 @@ Como resultado se obtiene que las etiquetas correspondientes a las frutas, no ti
 
 Como resultado se encuentra en que existe una relación fuerte y positiva entre `width` y `Height`, siendo logico, pues al ser imagenes anchas tienden a ser imagenes más altas, de aqui el alto valor de la correlación, similar a la correlación entre `width` Vs `Total resolution`, ya que si aumenta el ancho, la resolución tambien crece. Diferente pasa con `width` o `Height` Vs `Fruta Label`, ya que hay una correlación muy debil y casi nula, indicando que `Fruta label` no esta relacionada con la resolución de la imagen.  
 
+![Correlación entre variables](images/correlacion.png)
+
 Por ultimo, se evidencia que las imágenes de la fruta banano presentan rangos mayores de resolución, alcanzando valores por encima de los 350000 pixeles mientras que la fruta naranja tiene un máximo de 300000, sin embargo, todos los tres tipos de fruta presentan una mayor densidad hacia imágenes entre los 0 y 50000 pixeles de resolución total.
+![Resolución total de imágenes por fruta](images/histograma.png)
+
+De esta manera, se evidencia que el conjunto de datos conserva una cantidad suficiente de imágenes para el desarrollo del modelo, además de confirmar que las resoluciones son adecuadas para el fin del proyecto.
