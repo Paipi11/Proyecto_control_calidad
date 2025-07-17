@@ -36,18 +36,30 @@ loss (Función de pérdida): Mide el error del modelo. Un valor más bajo indica
 
 ### Resultados de evaluación
 
-Tabla que muestra los resultados de evaluación del modelo baseline, incluyendo las métricas de evaluación.
+| Métricas de evaluación | Resultados |
+|------|---------|
+| acurracy final| 0.680 | 
+| loss final| 0.82 | 
+
+De esta manera se obtuvo una precisión final de 68.1%
 
 ## Análisis de los resultados
+El modelo inicia con una precisión muy baja y una perdida inicial extremadamente alta, indicando que puede estar mal inicializado, esto se corregira en los siguientes modelos.
 
-Descripción de los resultados del modelo baseline, incluyendo fortalezas y debilidades del modelo.
+Algo importante por mensionar es que el modelo mejora su desempeño progresivamente a lo largo de los epoch, con una precision final de 68.1%, lo que representa un rendimiento aceptable, además tiene una pérdida final de 0.82 lo que indica que se logro minimizar el error durante el entrenamiento 
 
 ## Conclusiones
 
-Conclusiones generales sobre el rendimiento del modelo baseline y posibles áreas de mejora.
+El modelo ofrece una primera aproximación util para desplegar un camino y poder cumplir con los objetivos propuestos para el proyecto. Aunque su rendimiento es aceptable, es suficiente para identificar y conocer los puntos de mayor atención donde los proximos modelos pueden mejorar, como:
+
+. Ajuste de hiperparametros
+. Extracción de caracteristicas
 
 ## Referencias
 
-Lista de referencias utilizadas para construir el modelo baseline y evaluar su rendimiento.
+[Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten)  
+[Scikit-learn documentation](https://scikit-learn.org/stable/)  
+[tensorflow documentation](https://www.tensorflow.org/api_docs/python/tf/all_symbols)  
+[keras documentation](https://keras.io/)  
 
-Espero que te sea útil esta plantilla. Recuerda que puedes adaptarla a las necesidades específicas de tu proyecto.
+
