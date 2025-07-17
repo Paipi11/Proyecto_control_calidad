@@ -52,8 +52,8 @@ Algo importante por mensionar es que el modelo mejora su desempeño progresivame
 
 El modelo ofrece una primera aproximación util para desplegar un camino y poder cumplir con los objetivos propuestos para el proyecto. Aunque su rendimiento es aceptable, es suficiente para identificar y conocer los puntos de mayor atención donde los proximos modelos pueden mejorar, como:
 
-. Ajuste de hiperparametros
-. Extracción de caracteristicas
+. Ajuste de hiperparametros  
+. Extracción de caracteristicas  
 
 ## Referencias
 
