@@ -65,5 +65,5 @@ En conclusión, el modelo tiene una buena base, más sin embargo aún tiene opor
 
 ## Referencias
 
-Datos de exportación del DANE: Datos de exportación del DANE 2025
+Datos de exportación del DANE: [Datos de exportación del DANE 2025]( https://www.dane.gov.co/index.php/estadisticas-por-tema/comercio-internacional/exportaciones#:~:text=De%20acuerdo%20con%20la%20informaci%C3%B3n,en%20las%20ventas%20externas%20del)
 
