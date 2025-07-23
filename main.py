@@ -1,8 +1,19 @@
 import streamlit as st
 import tensorflow as tf 
 import numpy as np 
+import gdown
+import os
+
+def download_model():
+    if not os.path.exists("trained_best_model.h5"):
+        url = "https://drive.google.com/uc?id=1okI_6pifdyF77v7O7_NkviyrCKdnMF3o"
+        output = "trained_best_model.h5"
+        gdown.download(url, output, quiet=False)
+    else:
+        print("El modelo ya está descargado")
 
 def model_prediction(test_image):
+    download_model()
     model = tf.keras.models.load_model("trained_best_model.h5")
     image = tf.keras.preprocessing.image.load_img(test_image, target_size=(128,128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
@@ -52,4 +63,5 @@ elif(app_mode=="Identificación del producto"):
         for i in content:
             label.append(i[:-1])
         st.success("El modelo predice que la futa es {}".format(label[result_index]))
+       
        
