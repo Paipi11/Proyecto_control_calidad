@@ -65,19 +65,33 @@ En este mismo sentido, la estructura para el desplique en Render del presente pr
 
 
 - **Variables de entorno:**  
-`PORT` - Puerto asignado por render  
+`PORT = 8080` - Puerto asignado por render  
 `RENDER` - Indica que el servicio se ejecuta en Render  
 `HOSTNAME` - Nombre interno del contenedor  
 `SERVICE_NAME`  Nombre del servicio desplegado en Render  
-`MODEL_PATH`- Ruta del archivo  
-`ENV` - Modo (Producción o desarrollo  
+`MODEL_PATH = model/trained_best_model2.h5`- Ruta del archivo  
+`ENV` - Modo (Producción o desarrollo)  
 `SECRET_KEY`- Clave de seguridad  
-`DEBUG`- Indica si se deben activar los logs de depuración
+`DEBUG = False`- Indica si se deben activar los logs de depuración
 
   
 ## Documentación del despliegue
 
-- **Instrucciones de instalación:** (instrucciones detalladas para instalar el modelo en la plataforma de despliegue)
-- **Instrucciones de configuración:** (instrucciones detalladas para configurar el modelo en la plataforma de despliegue)
+- **Instrucciones de instalación:**
+  - Se prepara el repositorio con los archivos: `main.py`, `requirements.txt`, `Dockerfile` y las imagenes que contendra la pagina web.  
+  - Se configuran las variables de entorno: `PORT = 8080`, `MODEL_PATH = model/trained_best_model2.h5`, `SECRET_KEY`, `DEBUG = False`  
+  - Se configura el Dockerfile para inciar la aplicación (script de inicio)  
+  - Desde Rendel:  
+    - Se crea un nuevo Web Service  
+    - Se conecta al repositorio en Github  
+    - Se especifica la rama y la configuracion de arranque  
+    - Se inicia a generar el despliegue  
+      
+- **Instrucciones de configuración:**
+Se define el comando de inicio con Dockerfile
+`FROM python:3.11.4-slim` Esta es la linea es el punto de partida ya que brinda la base sobre la cual se construira el contenedor del despliegue, es una versión no tan resiente de Python para que tenga conexion con tensorflow.
+`WORKDIR /app` Se define la ruta del directorio de trabajo
+`COPY . .` Se copian todos los archivos y carpetas del entorno local al entorno del contenedor `/app`
+- (instrucciones detalladas para configurar el modelo en la plataforma de despliegue)
 - **Instrucciones de uso:** (instrucciones detalladas para utilizar el modelo en la plataforma de despliegue)
 - **Instrucciones de mantenimiento:** (instrucciones detalladas para mantener el modelo en la plataforma de despliegue)
