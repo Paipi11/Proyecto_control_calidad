@@ -1,6 +1,6 @@
-Banano en buen estado
-Banano podrido
-Manzana en buen estado
-Manzana podrida
-Naranja en buen estado
-Naranja podrida
+Banano (Apto para exportación)
+Banano (No Apto para exportación)
+Manzana (Apto para exportación)
+Manzana (No Apto para exportación)
+Naranja (Apta para exportación)
+Naranja (No Apta para exportación)
