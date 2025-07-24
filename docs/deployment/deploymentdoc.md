@@ -57,12 +57,24 @@ En este mismo sentido, la estructura para el desplique en Render del presente pr
 
 - **Archivo principal:** `main.py`
   
-- **Rutas de acceso a los archivos:**
-`Proyecto_control_calidad/main.py`
+- **Rutas de acceso a los archivos:**  
+`Proyecto_control_calidad/main.py`  
+`Proyecto_control_calidad/labels.txt`  
+`Proyecto_control_calidad/requirements.txt`  
+`Proyecto_control_calidad/Dockerfile`
 
-- (lista de rutas de acceso a los archivos necesarios para el despliegue)
-- **Variables de entorno:** (lista de variables de entorno necesarias para el despliegue)
 
+- **Variables de entorno:**  
+`PORT` - Puerto asignado por render  
+`RENDER` - Indica que el servicio se ejecuta en Render  
+`HOSTNAME` - Nombre interno del contenedor  
+`SERVICE_NAME`  Nombre del servicio desplegado en Render  
+`MODEL_PATH`- Ruta del archivo  
+`ENV` - Modo (Producción o desarrollo  
+`SECRET_KEY`- Clave de seguridad  
+`DEBUG`- Indica si se deben activar los logs de depuración
+
+  
 ## Documentación del despliegue
 
 - **Instrucciones de instalación:** (instrucciones detalladas para instalar el modelo en la plataforma de despliegue)
