@@ -1,4 +1,4 @@
-# Despliegue de modelos
+# Despliegue del modelo - link: [Identificación del estado de productos de exportación perecederos para mejorar el proceso de control de calidad: Bananos, Manzanas y Naranjas](https://proyecto-control-calidad-1.onrender.com)  
 
 ## Infraestructura
 
