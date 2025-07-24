@@ -43,7 +43,7 @@ La variable objetivo a estimar son las mismas categorías propuestas al inicio d
 
 ### Métricas de evaluación
 
-Para la evaluación de los 3 modelos se realizaron graficas de Accuracy y Loss para la data de entrenamiento y de validación para observar el comportamiento y poder determinar si había un overfitting. Adicionalmente, se realizo la matriz de confusión para cada uno de ellos, reporte de clasificación con el conjunto de validación y se evaluó el modelo en el conjunto de prueba para ver su precisión. Finalmente, para los tres modelos se utilizó el optimizador Adam al ser el más equilibrado para el entrenamiento, 'categorical_crossentropy', métrica de 'accuracy' y un total de 20 épocas. 
+Para la evaluación de los 3 modelos se realizaron graficas de Accuracy y Loss para la data de entrenamiento y de validación para observar el comportamiento y poder determinar si había un overfitting. Adicionalmente, se realizo la matriz de confusión para cada uno de ellos, reporte de clasificación con el conjunto de validación y se evaluó el modelo en el conjunto test para ver su precisión. Finalmente, para los tres modelos se utilizó el optimizador Adam al ser el más equilibrado para el entrenamiento, 'categorical_crossentropy', métrica de 'accuracy' y un total de 20 épocas. 
 
 ### Resultados de evaluación
 **1. Primer modelo: RGB CNN Model**
@@ -67,7 +67,7 @@ Para la evaluación de los 3 modelos se realizaron graficas de Accuracy y Loss p
 | Accuracy and Loss training set VS Validation set|Acc final training 0.48 y Acc final validation 0.55 |Acc final training 0.84 y Acc final validation 0.86 |Acc final training 0.79 y Acc final validation 0.80|Podemos observar que en los tres modelos se presenta overfitting al estar el valor de accuracy del validation set por encima del conjunto de entrenamiento lo que os indica que nuestra capa de Dropout puede tener un ajuste para mejorar este resultado.|
 | Confusion Matrix|  | || **1er modelo** la naranja en buen estado es la que más dispersión tiene y el banano podrido es la clase con mejor reconocimiento. **2do modelo** ya discrimina mejor todas las clases siendo la que tiene mayor dispersión la manzana en buen estado y el banano podrido el que menos tiene.**3er modelo** clasifica con una dispersión media las clases de naranja y de manzana y las de banano si presenta una dispersión muy baja.|
 |Classification report|	0.55|	0.86|	0.81| **1er modelo** tiene un accuracy general de 0.55 con dificultades para detectar la naranja en buen estado y solo el banano podrido presenta un acc cercano al 0.7.**2do modelo** ya tiene tanto un mejor acc, recall y f1-score teniendo un 0.8 de acc en todas las clases.**3er modelo** detecta muy bien las imágenes de las clases de banao mas sin embargo tiene oportunidad de mejora para las demás 4 clases al estar por debajo de 0.8 de acc.|
-|Evaluación en el conjunto de prueba|	0.29|	0.52|	0.81| Conforme a este resultado nos basamos para escoger con que modelo continuaríamos ya que puede determinar mejor las características del conjunto de entrenamiento. En conclusión, continuamos explorando el modelo de transfer learning para buscar los mejores hiperparámetros.|
+|Evaluación en el conjunto test|	0.29|	0.52|	0.81| Conforme a este resultado nos basamos para escoger con que modelo continuaríamos, ya que puede determinar mejor las características del conjunto test. En conclusión, continuamos explorando el modelo de transfer learning para buscar los mejores hiperparámetros.|
 
 ## Conclusiones
 
