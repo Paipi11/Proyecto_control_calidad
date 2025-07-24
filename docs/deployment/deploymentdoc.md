@@ -27,12 +27,12 @@ La estructura correspondiente al desplique en Render del presente proyecto conti
 `Dockerfile` - Es un archivo que contiene un conjunto de instrucciones para preparar el entorno en el que la aplicación se ejecutara, se incluye el sistema operativo base, las dependencias, el codigo fuente y el comando de incio.  
  
 **Requisitos de seguridad:**  
-La aplicación será de libre acceso y no manejará datos sensibles ni documentos que requieran confidencialidad. No obstante, se considerarán las siguientes medidas mínimas:
-Mantener las dependencias actualizadas para evitar vulnerabilidades conocidas.
+La aplicación será de libre acceso y no manejará datos sensibles ni documentos que requieran confidencialidad. No obstante, se considerarán las siguientes medidas mínimas:  
+- Mantener las dependencias actualizadas para evitar vulnerabilidades conocidas.
 
-Asegurar que no se expongan credenciales o tokens en el código fuente, utilizando variables de entorno si fuera necesario.
+- Asegurar que no se expongan credenciales o tokens en el código fuente, utilizando variables de entorno si fuera necesario.
 
-Configurar el servidor para escuchar únicamente en la dirección y puerto especificados, delegando la seguridad de acceso al proveedor que para el presente proyecto es Render.  
+- Configurar el servidor para escuchar únicamente en la dirección y puerto especificados, delegando la seguridad de acceso al proveedor que para el presente proyecto es Render.  
 
   
 **Diagrama de arquitectura:** Se presenta el diagrama de arquitectura correspondiente al desplieque del modelo.
@@ -123,12 +123,12 @@ Instrucciones de uso:
 El modelo estara disponible en el siguiente link:  
 [Identificación del estado de productos de exportación perecederos para mejorar el proceso de control de calidad: Bananos, Manzanas y Naranjas](https://proyecto-control-calidad-1.onrender.com)  
 
-Cuando se esta en la pagina web, esta tendra tres apartados, dando clic en la viñeta superior izquierda, en el cual estara el panel de control, allí de desplegara una lista con el contenido:
-Inicio: Estara el nombre con el cual se identifica eel algoritmo construido y una imagen de presentación.  
+Cuando se esta en la pagina web, esta tendra tres apartados, dando clic en la viñeta superior izquierda, en el cual estara el panel de control, allí de desplegara una lista con el contenido:  
+- Inicio: Estara el nombre con el cual se identifica el algoritmo construido y una imagen de presentación.  
   
-Información general del producto: Allí se logra observar el objetivo general, el Stakeholders y las expectativas del algoritmo construido.  
+- Información general del producto: Allí se logra observar el objetivo general, el Stakeholders y las expectativas del algoritmo construido.  
 
-Identificación del producto: En este apartado el cliente podra subir desde el entorno local una imagen de las frutas que abarcan el presente proyecto (Manzana, Naranja o bananos), mediante el boton `Browse files`, allí con la opción `Visualizar la imagen`se desplegara la imagen en cuestión y con el boton `predecir` la pagina arrojara la predicción (Fruta en buen estado o en mal estado) para la exportación. 
+- Identificación del producto: En este apartado el cliente podra subir desde su entorno local, una imagen de las frutas seleccionadas (Manzana, Naranja o bananos), mediante el boton `Browse files`, allí con la opción `Visualizar la imagen`se visualizara, por ultimo, con el boton `predecir` la pagina arrojara la predicción (Fruta en buen estado o en mal estado) para exportación. 
 
 Este proceso podra realizarse cuantas veces el usuario lo requiera. 
 
