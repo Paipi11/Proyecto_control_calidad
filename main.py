@@ -6,7 +6,7 @@ import os
 
 def download_model():
     if not os.path.exists("trained_best_model2.h5"):
-        url = "https://drive.google.com/file/d/1AH2jsefRTUGeM1h8hr1VdjbfKCe-2uqW"
+        url = "https://drive.google.com/uc?id=1k0fr_YfBG98s-G15aFNcdTdw7PP0iuA4"
         output = "trained_best_model2.h5"
         gdown.download(url, output, quiet=False)
     else:
