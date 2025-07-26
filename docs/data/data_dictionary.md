@@ -8,7 +8,7 @@ Respecto a la siguiente tabla, se comentan aspectos generales de la variable, se
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | --- | --- | --- | --- | --- |
 | Frutas frescas | Imagenes de frutas en buen estado (`fresh`), representadas como: `freshapples`,  `freshbanana`,  `freshoranges` | categórico  (Imagen) | `freshapples`,  `freshbanana`,  `freshoranges` | [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) |
-  | Frutas en descomposición | Imagenes de frutas en mal estado (`unripe`), representadas como: `rottenapples`,  `rottenbanana`,  `rottenoranges`| categórico  (Imagen) | `rottenapples`,  `rottenbanana`,  `rottenoranges` | [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) |
+  | Frutas en descomposición | Imagenes de frutas en mal estado (`rotten`), representadas como: `rottenapples`,  `rottenbanana`,  `rottenoranges`| categórico  (Imagen) | `rottenapples`,  `rottenbanana`,  `rottenoranges` | [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) |
 
 
 
