@@ -59,7 +59,7 @@ La aplicación será de libre acceso y no manejará datos sensibles ni documento
                     └───────────┬─────────────────┘
                                 │
                     ┌───────────▼─────────────────┐
-                    │       Modelo ML             │
+                    │         Modelo              │
                     │     (TensorFlow)            │
                     └─────────────────────────────┘
 ```
