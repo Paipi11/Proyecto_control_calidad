@@ -31,22 +31,9 @@ La variable objetivo a estimar son dos variables categóricas que el modelo pred
 Estas variables se predeciran a partir de la imagen que reciba el modelo determinando estas dos variables objetivo.
 El producto final será utilizado por parte de los exportadores de fruta que podrán, a través del modelo, identificar si la fruta está en condiciones optimas o no, para ser exportada y evitar posibles contaminaciones, es decir, para este proyecto se tendra en cuenta si es una fruta fresca `fresh` o si es una fruta `rotten` además el modelo debe informar que tipo de fruta es `freshapples`, `freshbanana`, `freshoranges`, `rottenapples`, `rottenbanana`, `rottenoranges`. Esta información etiquetada ya viene preestablecida en el dataset por la manera en que estan almacenados los datos.
 
-| Carpeta, estado y fruta | Número de archivos |
-|------|---------|
-| train - rottenapples| 2342 | 
-| train - freshapples | 1693 | 
-| train - rottenbanana | 2224 | 
-| train - freshbanana | 1581 | 
-| train - rottenoranges | 1573 | 
-| train - freshoranges | 1466 |
-| test - rottenapples | 601 |
-| test - freshapples | 395 |
-| test - rottenbanana | 530 |
-| test - fresbanana | 381 |
-| test - freshoranges | 388 |
-| test - rottenorange | 398 |
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/bbf81723-e0b8-4aca-b8d2-e9e02ea96d29" />
 
-![Dsitribución de variables](images/distribucion.png)
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/4f74dd9b-0272-4d4a-abef-0132965b4158" />
 
 ## Ranking de variables
 
