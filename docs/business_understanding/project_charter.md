@@ -67,7 +67,7 @@ La metodología utilizada para este proyecto será Cross Industry Standard Proce
 
 ## Stakeholders
 
-- Carlos Suarez QMS Coordinator de Ocati S.A.
+- Ejemplo de posible stakeholder: Ocati S.A.
 - Relación con los stakeholders: En lo que se lleva del 2025 las exportaciones del grupo de productos Agropecuarios, alimentos y bebidas ha tenido una contribución de 11 Millones de dólares habiendo crecido un 36.9% versus el inicio del año según cifras del DANE y su tendencia es positiva. Dado que la demanda de este tipo de productos crece, es crucial un buen control de calidad y contar con herramientas tecnológicas que permitan una mayor efectividad y precisión a la hora de escoger estos productos. Este rubro será vital para la economía colombiana y para todas las empresas que están en busca de nuevos clientes internacionales y genera confianza en la calidad de sus productos.
 - Expectativas: mejorar la efectividad del proceso de selección de frutas, minimizando el riesgo de reportar frutas en mal estado en pedidos de exportación y evitar pérdidas monetarias y de reputación a la compañía.
 
