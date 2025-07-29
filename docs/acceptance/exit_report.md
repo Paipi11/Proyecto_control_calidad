@@ -98,17 +98,26 @@ El modelo tiene una buena base, más sin embargo aún tiene oportunidad de mejor
   
 - **Recomendaciones para futuros proyectos de machine learning:**  Conocer muy bien los diferentes modelos que mejor se pueden implementar para el problema planteado. En nuestro caso omitimos el transfer learning en un foco inicial, pero en este modulo pudimos apreciar su poder y precisión. Adicionalmente, el versionamiento habilitado en las herramientas del despliegue ya que a pesar de que muchas librerías modernas han avanzado mucho, su soporte en aplicaciones de despliegue aún es muy bajo y es recomendable analizar esto primero antes de escoger alguna técnica en especial. Finalmente, el nunca dejar de aprender sobre el tema ya que esta creciendo aniveles exponenciales y cada día los enfoques son más precisos y rápidos.
 
-## Impacto del proyecto
+## Impacto del proyecto  
 
-- Descripción del impacto del modelo en el negocio o en la industria.
-- Identificación de las áreas de mejora y oportunidades de desarrollo futuras.
+Las nuevas tecnologías emergentes permiten tener un control de la información en tiempo real sobre los productos ofertados en las empresas, más aún, la calidad con que ellos llegan o podrían llegar al consumidor final. Por un lado, los tiempos de identificación de frutas en buen estado o mal estado, se reducen en gran medida al hacer la transición de manera manual a manera virtual, resultando una mejora significativa en los tiempos de entrega y de esta manera un crecimiento económico. Por otro lado, al notar que la aplicación de estas tecnologías emergentes  a los procesos productivos aumentan ganancias, reducen tiempo, la empresa inicia a destinar un rubro para capacitar el personal de su planta y de esta manera hacer una actualización de su cadena de producción, esto para hacer una transición progresiva que promueva el bienestar social, productivo y económico.  
 
-## Conclusiones
+Se tiene como plan de mejoramiento ampliar la variedad de frutas que se pueden identificar, también se pueden añadir vegetales, además se abren un sinfín de oportunidades como la capacidad de predecir características como: fruta verde, fruta con alguna enfermedad, tiempo aproximado para no ser apta para exportación, etc.   
 
-- Resumen de los resultados y principales logros del proyecto.
-- Conclusiones finales y recomendaciones para futuros proyectos.
+
+
+## Conclusiones  
+
+Se desarrollo un algoritmo útil para la identificación de frutas para exportación que da respuesta a los objetivos propuestos inicialmente, aunque el proyecto está en una fase temprana, la empresa planea continuar explorando posibilidades de mejora como la búsqueda de mejores hiperparámetros que permitan discernir mejor las características de cada clase e incrementar sus parámetros de evaluación.  
+  
+Uno de los logros más importantes del proyecto fue la reducción significativa del tiempo requerido para la identificación de los productos, representando un avance importante en los procesos logísticos y de calidad.  
+  
+A pesar de los buenos resultados obtenidos, cabe destacar que, como se ha mencionado antes, el algoritmo aún tiene oportunidad de mejora ya que la precisión a un nivel de producción alto debe ser muy cercana al 100% y un 1% pude representar millones de productos con clasificación errónea.  
 
 ## Agradecimientos
 
-- Agradecimientos al equipo de trabajo y a los colaboradores que hicieron posible este proyecto.
-- Agradecimientos especiales a los patrocinadores y financiadores del proyecto.
+Queremos expresar nuestro más sincero agradecimiento al equipo de trabajo que hizo posible el desarrollo de este proyecto, en especial a Andrés Paipilla el líder del proyecto y a Daniel Pedreros, por su compromiso, dedicación y colaboración, fueron fundamentales para alcanzar los objetivos propuestos, además de su esfuerzo, creatividad y disposición para enfrentar los retos que surgieron en el camino.  
+  
+Les agradecemos especialmente a nuestros patrocinadores y entidades financiadoras, cuya confianza y respaldo económico permitieron llevar a cabo esta iniciativa. Sin su apoyo, este proyecto no habría sido posible.  
+
+
