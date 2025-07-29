@@ -76,7 +76,7 @@ Con base en los anteriores resultados se determino que el 3er modelo sería el m
 Finalmente, el modelo puede clasificar de forma eficiente todas las clases, más se le dificulta el identificar la manzana en buen estado. Al evaluar el modelo final en el conjunto de test, presenta una precisión del 91% aproximadamente.
 
 **4.	Despliegue.**
-Por medio de la herramienta Render y la librería Streamlit se desplego la aplicación (Link) donde es posible cargar cualquier imagen de un banano, manzana y naranja para determinar su estado. Para ello se utilizo la contenerización por medio de Docker para evitar cualquier tipo de inviabilidad entre las versiones de las librerías y Python. Finalmente, la aplicación no requiere de ningún tipo de autenticación y es de carácter público.
+Por medio de la herramienta Render y la librería Streamlit se desplego la aplicación [Identificación del estado de productos de exportación perecederos para mejorar el proceso de control de calidad: Bananos, Manzanas y Naranjas](https://proyecto-control-calidad-1.onrender.com) donde es posible cargar cualquier imagen de un banano, manzana y naranja para determinar su estado. Para ello se utilizo la contenerización por medio de Docker para evitar cualquier tipo de inviabilidad entre las versiones de las librerías y Python. Finalmente, la aplicación no requiere de ningún tipo de autenticación y es de carácter público.
 
 ### Evaluación del modelo final y comparación con el modelo base.
 Con base en el modelo inicial que se planteo se tiene lo siguiente:
