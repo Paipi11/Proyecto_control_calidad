@@ -11,11 +11,18 @@ Este informe describe los resultados del proyecto de machine learning y presenta
 Este proyecto busca ayudar a mejorar el proceso de control de calidad de ciertos productos perecederos, en específico, las frutas banano manzana y naranja prediciendo si están en un estado óptimo de exportación o no. El proyecto se trabajará con base a la metodología Cross Industry Standard Process for Data Mining (CRISP - DM), gracias a su flexibilidad y facilidad para personalizar. El cronograma de actividades se repartió en 5 semanas en las cuales se hará la entrega final y se estima un costo estimado de entre 22’000.000 de pesos a 49´000.000 de pesos según los requerimientos de mano de obra y los stakeholders. 
 
 **2.	Data y preprocesamiento.**
-Los datos utilizados en este proyecto provienen del dataset "Fruit Ripeness: Unripe, Ripe, and Rotten", disponible en la plataforma Kaggle. Con base en los objetivos del proyecto eliminamos la carpeta Unripe, ya que son frutas biches y en su totalidad con una resolución menor a 128x128 pixeles, que es el mínimo requerido para obtener buenos resultados en el entrenamiento. Adicionalmente al aplicar el filtro de 128x128 pixeles eliminamos 27 imágenes adicionales del corpus inicial quedando al final con una cantidad de 13572 imagenes distribuidas en:
-imágenes test: 2693
-imágenes train: 10879
+Los datos utilizados en este proyecto provienen del dataset "Fruit Ripeness: Unripe, Ripe, and Rotten", disponible en la plataforma Kaggle. Con base en los objetivos del proyecto eliminamos la carpeta Unripe, ya que son frutas biches y en su totalidad con una resolución menor a 128x128 pixeles, que es el mínimo requerido para obtener buenos resultados en el entrenamiento. Adicionalmente al aplicar el filtro de 128x128 pixeles eliminamos 27 imágenes adicionales del corpus inicial quedando al final con una cantidad de 13572 imágenes distribuidas en:
+
+- Imágenes test: 2693
+
+- Imágenes train: 10879
+  
 Se presenta el diccionario de los datos finales:
 
+| Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
+| --- | --- | --- | --- | --- |
+| Frutas frescas | Imagenes de frutas en buen estado (`fresh`), representadas como: `freshapples`,  `freshbanana`,  `freshoranges` | categórico  (Imagen) | `freshapples`,  `freshbanana`,  `freshoranges` | [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) |
+  | Frutas en descomposición | Imagenes de frutas en mal estado (`rotten`), representadas como: `rottenapples`,  `rottenbanana`,  `rottenoranges`| categórico  (Imagen) | `rottenapples`,  `rottenbanana`,  `rottenoranges` | [Fruit Ripeness: Unripe, Ripe, and Rotten](https://www.kaggle.com/datasets/leftin/fruit-ripeness-unripe-ripe-and-rotten) |
 
 <img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/b84d6041-8f27-4696-a199-c6d80d2d934f" />
 
