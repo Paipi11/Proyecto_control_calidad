@@ -57,14 +57,19 @@ Variables de entrada:
 
 5 rottenoranges: Esta clase contiene imágenes de naranjas en mal estado (No apta para exportación)
 
+| Gráficas y métricas de evaluación | RGB CNN Model | Grayscale CNN Model | Transfer Learning Model | Análisis |
+|---------|---------|---------|---------|---------|
+| Accuracy and Loss training set VS Validation set|Acc final training 0.48 y Acc final validation 0.55 |Acc final training 0.84 y Acc final validation 0.86 |Acc final training 0.79 y Acc final validation 0.80|Podemos observar que en los tres modelos se presenta overfitting al estar el valor de accuracy del validation set por encima del conjunto de entrenamiento lo que os indica que nuestra capa de Dropout puede tener un ajuste para mejorar este resultado.|
+| Confusion Matrix|  | || **1er modelo** la naranja en buen estado es la que más dispersión tiene y el banano podrido es la clase con mejor reconocimiento. **2do modelo** ya discrimina mejor todas las clases siendo la que tiene mayor dispersión la manzana en buen estado y el banano podrido el que menos tiene.**3er modelo** clasifica con una dispersión media las clases de naranja y de manzana y las de banano si presenta una dispersión muy baja.|
+|Classification report|	0.55|	0.86|	0.81| **1er modelo** tiene un accuracy general de 0.55 con dificultades para detectar la naranja en buen estado y solo el banano podrido presenta un acc cercano al 0.7.**2do modelo** ya tiene tanto un mejor acc, recall y f1-score teniendo un 0.8 de acc en todas las clases.**3er modelo** detecta muy bien las imágenes de las clases de banao mas sin embargo tiene oportunidad de mejora para las demás 4 clases al estar por debajo de 0.8 de acc.|
+|Evaluación en el conjunto test|	0.29|	0.52|	0.81| Conforme a este resultado nos basamos para escoger con que modelo continuaríamos, ya que puede determinar mejor las características del conjunto test. En conclusión, continuamos explorando el modelo de transfer learning para buscar los mejores hiperparámetros.|
 
-Con base en los anteriores resultados se determino que el 3er modelo sería el más preciso para generar el modelo. Con la herramienta de keras-tuner se determino que los mejores hiperparámetros serían los siguientes:
+Con base en los anteriores resultados se determino que el 3er modelo sería el más preciso para generar el modelo. Con la herramienta de *keras-tuner* se determino que los mejores hiperparámetros serían los siguientes:
 - Número de neuronas: 64
 - La tasa de dropout: 0.2
 - La tasa de aprendizaje del optimizador Adam: 0.001
 
 <img width="794" height="692" alt="image" src="https://github.com/user-attachments/assets/1032d127-0afa-4442-a3ee-cbfe40f554bd" />
-
 
 <img width="430" height="231" alt="image" src="https://github.com/user-attachments/assets/99e6e769-74f3-406d-8fc4-b71ec81fcdeb" />
 
